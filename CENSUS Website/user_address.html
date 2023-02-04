@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census</title>
+    <link rel="icon" href="CSS/image/llmjpn8a0pgu8szjmnyi.png" type= "image/gif/png">
+    <link rel="stylesheet" href="CSS/user_address.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="CSS/image/llmjpn8a0pgu8szjmnyi.png">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">CENSUS</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="user_personal_info.html">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Personal Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user_address.html">
+                            <i class='bx bx-location-plus icon' ></i>
+                            <span class="text nav-text">Address</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user_houshold.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">Houshold</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+            <li class="nav-link">
+                    <a href="user_feedback.html">
+                    <i class='bx bx-message icon' ></i>
+                    <span class="text nav-text">FEEDBACK</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="citizens_logout.php">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text"><b> Add Your Address </div>
+            <div class="addressform">
+                <main>
+                    <div class="wrapper">
+                      <form action ="user_address.php" method="POST">
+                        <div>
+                          <label for="identity_no">Identity Number :</label>
+                          <input required type="text" id="identity_no" name="identity_no" placeholder="NID or Birth Cert. No."><br>
+                        </div>
+                        <div>
+                          <label for="street-address">Street address</label>
+                          <input required type="text" id="streetaddress" name="streetaddress" autocomplete="streetaddress" required enterkeyhint="next"></input>
+                        
+                        </div>
+                        <div>
+                          <label for="postal-code">ZIP or Postal Code</label>
+                          <input required class="postal-code" id="postalcode" name="postalcode" autocomplete="postalcode" enterkeyhint="next">
+                        </div>
+                        <div>
+                          <label for="city">City</label>
+                          <select required type="text" id="city" name="city" autocomplete="address-level2" enterkeyhint="next">
+                              <option></option>
+                              <option value="Barishal">Barishal</option>
+                              <option value="Chattogram">Chattogram</option>
+                              <option value="Dhaka">Dhaka</option>
+                              <option value="Khulna">Khulna</option>
+                              <option value="Rajshahi">Rajshahi</option>
+                              <option value="Rangpur">Rangpur</option>
+                              <option value="Mymensingh">Mymensingh</option>
+                              <option value="Sylhet">Sylhet</option>
+                          </select>    
+                        </div>
+                        <div>
+                          <label for="country">Country or Region</label>
+                          <select required id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+                              <option></option>
+                              <option value="Afghanistan">Afghanistan</option>
+                              <option value="Australia">Australia</option>
+                              <option value="Austria">Austria</option>
+                              <option value="Bangladesh">Bangladesh</option>
+                              <option value="Belarus">Belarus</option>
+                              <option value="Belgium">Belgium</option>
+                              <option value="Bhutan">Bhutan</option>
+                              <option value="Brazil">Brazil</option>
+                              <option value="Canada">Canada</option>
+                              <option value="China">China</option>
+                              <option value="Denmark">Denmark</option>
+                              <option value="Egypt">Egypt</option>
+                              <option value="France">France</option>
+                              <option value="India">India</option>
+                              <option value="Japan">Japan</option>
+                              <option value="Malaysia">Malaysia</option>
+                              <option value="Maldives">Maldives</option>
+                              <option value="Nepal">Nepal</option>
+                              <option value="North Korea">North Korea</option>
+                              <option value="Peru">Peru</option>
+                              <option value="Sweden">Sweden</option>
+                              <option value="Switzerland">Switzerland</option>
+                              <option value="Thailand">Thailand</option>
+                              <option value="Zimbabwe">Zimbabwe</option>
+                          </select> 
+                        </div>
+                        <button>Submit</button>
+                      </form>
+                    </div>
+                  </main>
+    
+            </div>
+            <div class="footer">Designed & Developed by ©Joy Pal</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav');
+      toggle = body.querySelector(".toggle");
+
+    toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Census</title>
+    <link rel="icon" href="CSS/image/llmjpn8a0pgu8szjmnyi.png" type= "image/gif/png">
+    <!--<link rel="stylesheet" href="CSS/user_personal_info.css">-->
+    <link rel="stylesheet" href="../CENSUS Website/CSS/userpersonalinfo.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="CSS/image/llmjpn8a0pgu8szjmnyi.png">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">CENSUS</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="user_personal_info.html">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Personal Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user_address.html">
+                            <i class='bx bx-location-plus icon' ></i>
+                            <span class="text nav-text">Address</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="user_houshold.html">
+                            <i class='bx bx-building-house icon'></i>
+                            <span class="text nav-text">Houshold</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+            <li class="nav-link">
+                    <a href="user_feedback.html">
+                    <i class='bx bx-message icon' ></i>
+                    <span class="text nav-text">FEEDBACK</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="citizens_logout.php">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text"><b> Add Your Personal Information </div>
+    
+           <div class="personalinfo">
+                <form action="user_personal_info.php" method="POST">
+
+                    <label for="identity_no">Identity Number :</label><br>
+                    <input type="text" id="identity_no" name="identity_no" placeholder="NID or Birth Cert. No."><br><br>
+
+                    <label for="fullname">Full Name :</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name"></br></br>
+          
+                    <label for="f_name">Father Name :</label><br>
+                    <input type="text" id="f_name" name="f_name" placeholder="Your Father Name"><br /></br>
+        
+                    <label for="m_name">Mother Name :</label><br>
+                    <input type="text" id="m_name" name="m_name" placeholder="Your Mother Name"><br /></br>
+          
+                    <label for="gender"> Gender :</label><br>
+                    <input type="text" id="gender" name="gender" placeholder="Male/Female"><br /><br />
+         
+                    <label for="datemin"> Enter Your Birth Date:</label><br>
+                    <input type="date" id="datemin" name="datemin"><br /><br />
+        
+                    <label for="image"> Enter Your Image :</label><br>
+                    <input type="file" id="image" name="image"><br>
+                    <br><br>
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+            <div class="footer">Designed & Developed by ©Joy Pal</div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav');
+      toggle = body.querySelector(".toggle");
+
+    toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+    </script>
+       
+</body>
+</html>
