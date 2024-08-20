@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+
+
+
+/*full body*/
+body {
+    height:635px;
+    background-image: url("image/Purple-Flower-Website-Background.png");
+    background-size: cover;
+  
+  }
+#container{
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-top: -0.6%;
+}
+
+.float-parent-element { 
+  width: 100%; 
+} 
+.float-child-element { 
+  float: left; 
+  width: 50%; 
+} 
+.column1 { 
+  background-color: #f5f1f5;
+  border-radius: 5px; 
+  border: 2px solid rgb(244, 15, 194);
+  margin-top:30%;
+  margin-left: 20%; 
+  margin-right:0%;
+  height: 350px; 
+  font-family: Georgia;
+  color:rgb(12, 3, 10);
+} 
+.textoncolumn1{
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 20px;
+  height: 50px;
+ }
+
+/*Add icons*/
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: linear-gradient(to left, #cc0066 53%, #ffff00 100%);
+  color: white;
+}
+.fa-github {
+  background: white;
+  color: black;
+}
+
+
+.column2 { 
+  margin-left: 20%;
+  margin-right:10%;
+  margin-top:20%;
+  height:150px;
+  width: 300px; 
+  background: #fff;
+  border-radius: 3px; 
+}
+
+ input[type="radio"]{
+  display: none;
+}
+ .button{
+  height: 35px;
+  margin: 20px;
+}
+ .button input{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: rgb(9, 0, 0);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #cc0066;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+
+ .button input:hover{
+ /* transform: scale(0.99); */
+ background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+ }
+
+ .textoncolumn1{
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 20px;
+  height: 50px;
+ }
+
+
