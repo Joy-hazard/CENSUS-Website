@@ -17,7 +17,7 @@ include_once('connection.php');
 		$_SESSION["email"] = $email;
 		$_SESSION["User_pass"] = $User_pass;
 
-		header("location:After_login.php");
+		header("location:After_login.html");
 	
     } else{
 		echo "<h1>Login Failed...Incorrect Email or Password...!</h1>";
